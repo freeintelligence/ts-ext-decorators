@@ -4,6 +4,19 @@
 export class ParameterDecorator {
 
   /*
+   * Obtener el primer método a ejecutar por si el método original tiene parámetros de decoradores
+   * */
+  static method(target: any, originalMethod: string) {
+    // Tiene parámetros de decoradores
+    if(typeof target[originalMethod+'__0'] != 'undefined') return originalMethod+'__0'
+    // No tiene parámetros de decoradores
+    else if(typeof target[originalMethod] != 'undefined') return originalMethod
+
+    //
+    return null
+  }
+
+  /*
    *
    * */
   static create_prototype(target: Object, propertyKey: string, parameterIndex: number, fn: any) {

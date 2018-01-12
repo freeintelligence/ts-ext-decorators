@@ -1,11 +1,19 @@
 {
   "name": "ts-ext-decorators",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "Funciones para el uso de decoradores.",
   "author": {
     "name": "FreeIntelligence",
     "email": "free04381@gmail.com"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freeintelligence/ts-ext-decorators.git"
+  },
+  "bugs": {
+    "url": "https://github.com/freeintelligence/ts-ext-decorators/issues"
+  },
+  "homepage": "https://github.com/freeintelligence/ts-ext-decorators#readme",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
