@@ -1,0 +1,23 @@
+{
+  "name": "ts-ext-decorators",
+  "version": "1.0.0",
+  "description": "",
+  "author": {
+    "name": "FreeIntelligence",
+    "email": "free04381@gmail.com"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "typescript",
+    "ts",
+    "decorator",
+    "decorators",
+    "parameter",
+    "parameters"
+  ],
+  "license": "ISC"
+}
