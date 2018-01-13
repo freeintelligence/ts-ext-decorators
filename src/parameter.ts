@@ -32,11 +32,11 @@ export class ParameterDecorator {
       ParameterDecorator.unshift_parameter(this, propertyKey, parameterIndex, value)
 
       // Si hay otro decorador, lo ejecuta (osea, el siguiente)
-      if(typeof this[nextname2] != 'undefined' && parameterIndex != 0) await this[nextname2](data)
+      if(typeof this[nextname2] != 'undefined' && parameterIndex != 0) return await this[nextname2](data)
 
       // Es el último decorador disponible, llama a la función "original"
       if(parameterIndex == 0) {
-        await this[propertyKey].apply(this, this[ParameterDecorator.get_arguments_array(propertyKey)])
+        return await this[propertyKey].apply(this, this[ParameterDecorator.get_arguments_array(propertyKey)])
       }
     }
   }
